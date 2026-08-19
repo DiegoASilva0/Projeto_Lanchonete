@@ -8,7 +8,7 @@ function clickmenu() {
   }
 }
 
-function fecharMenu() {
+/* function fecharMenu() {
   let menu = document.getElementById("menu-mobile");
 
   if (window.innerWidth >= 825) {
@@ -16,4 +16,4 @@ function fecharMenu() {
   } else {
     menu.style.display = "none";
   }
-}
+} */

@@ -83,8 +83,15 @@
   }
 
 
-  .background-principal {
-  background: black url(../imagens/background-lanche.png) no-repeat;
+.background-principal {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.95)
+    ),
+    url("../imagens/background-lanche.png") no-repeat;
+
   background-size: cover;
   background-position: center center;
   height: 88vh;
@@ -101,11 +108,21 @@
   width: 500px;
 }
 
+#button-principais {
+  display: flex;
+}
+
 #verCardapio, #WhatsApp {
-  padding: 17px;
   letter-spacing: 1.3px;
   margin-bottom: 15px;
   margin-right: 20px;
+
+  align-items: center;
+  letter-spacing: 1.3px;
+} 
+
+#WhatsApp {
+  padding: 20px;
 }
 
 .informacoes-estabelecimento {
