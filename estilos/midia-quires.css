@@ -1,0 +1,117 @@
+@media screen and (min-width: 825px) {
+  :root {
+    --background: #0a0a0a;
+    --surface: #111111;
+    --border: #292929;
+
+    --primary: #ffb800;
+    --primary-hover: #ffaa00;
+
+    --text: #ffffff;
+    --text-secondary: #b3b3b3;
+
+    --whatsapp: #25d366;
+    --danger: #ff3b30;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  #burguer {
+    display: none;
+  }
+
+  nav {
+    height: 50px;
+    margin: auto;
+  }
+
+   nav#menu-mobile {
+    display: block;
+  }
+
+  nav#menu-mobile > ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav#menu-mobile > ul > li {
+    text-align: center;
+    background-color: transparent;
+
+    border-radius: 0px;
+    margin-bottom: 0px;
+
+    width: 100%;
+    padding: 8px;
+   margin-right: 10px;
+
+    cursor: pointer;
+  }
+
+  #carrinho-menu {
+    display: none;
+  }
+
+  #carrinho {
+    display: block;
+    color: white;
+    border: 1px solid var(--primary);
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: auto;
+  }
+
+  #carrinho:hover {
+    background-color: var(--primary);
+    transform: scale(1.2);
+    transition: 300ms;
+  }
+
+  nav > ul > li:hover {
+    border-bottom: 2px solid var(--primary-hover);
+    transform: scale(1.1);
+    transition: 300ms;
+  }
+
+  nav#menu-mobile > ul > li:hover {
+    background-color: transparent;
+  }
+
+
+  .background-principal {
+  background: black url(../imagens/background-lanche.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 88vh;
+}
+
+.informacoes-principais-container > div > h1 {
+  color: var(--text);
+  margin-bottom: 15px;
+  font-size: 3rem;
+}
+
+.informacoes-principais-container > div > p {
+  display: block;
+  width: 500px;
+}
+
+#verCardapio, #WhatsApp {
+  padding: 17px;
+  letter-spacing: 1.3px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.informacoes-estabelecimento {
+  display: flex;
+}
+
+
+
+}

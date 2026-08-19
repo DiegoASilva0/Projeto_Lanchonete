@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #0a0a0a;
+  --surface: #111111;
+  --border: #292929;
+
+  --primary: #eeab01;
+  --primary-hover: #ffaa00;
+
+  --text: #ffffff;
+  --text-secondary: #b3b3b3;
+
+  --whatsapp: #25d366;
+  --danger: #ff3b30;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+}
+
+header {
+  background-color: var(--background);
+  border-bottom: 2px solid var(--border);
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#burguer {
+  margin-left: auto;
+}
+
+#carrinho {
+  display: none;
+}
+
+#carrinho-menu {
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: auto;
+}
+
+#carrinho-menu:hover {
+  background-color: var(--primary);
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+i#burguer {
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+}
+
+#menu-mobile {
+  display: none;
+}
+
+nav#menu-mobile > ul {
+  display: inline-block;
+  padding: 10px;
+  list-style: none;
+  columns: 2;
+}
+
+nav#menu-mobile > ul > li {
+  border-radius: 20px;
+  background-color: var(--primary);
+  margin-bottom: 8px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+nav#menu-mobile > ul > li:hover {
+  background-color: var(--primary-hover);
+}
+
+nav#menu-mobile a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+img {
+  width: 100px;
+}
+
+/* 
+  imagem-principal
+*/
+
+main {
+  color: wheat;
+}
+
+.background-principal {
+  background: black url(../imagens/background-phone.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 50px;
+  display: flex;
+}
+
+.informacoes-principais-container {
+  padding: 30px;
+  align-items: center;
+  display: flex;
+}
+
+.informacoes-principais-container > div > h1 {
+  color: var(--text);
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.color-yellow {
+  color: var(--primary);
+}
+
+.informacoes-principais-container > div > p {
+  text-shadow: 2px 2px 2px black;
+  display: block;
+  width: 250px;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+#verCardapio, #WhatsApp {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  letter-spacing: 1.3px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#WhatsApp:hover {
+  background-color: rgb(0, 163, 0);
+}
+
+#verCardapio:hover {
+  background-color: var(--primary-hover);
+}
+
+#verCardapio {
+  background-color: var(--primary);
+  color: var(--surface);
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+#WhatsApp {
+  background-color: var(--whatsapp);
+  color: var(--text);
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+
+.informacoes-estabelecimento {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.estabelecimento > span {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.estabelecimento > p {
+  color: var(--text-secondary);
+  text-shadow: 1px 1px 2px black;
+  padding-top: 5px;
+}
+
+.estabelecimento {
+margin: auto;
+ border: 1.5px solid rgba(255, 255, 255, 0.425);
+ width: 260px;
+ padding: 20px;
+}
