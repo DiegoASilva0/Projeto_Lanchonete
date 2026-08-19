@@ -1,4 +1,4 @@
-@media screen and (min-width: 1082px) {
+@media screen and (min-width: 825px) {
   :root {
     --background: #0a0a0a;
     --surface: #111111;
@@ -94,7 +94,7 @@
 
   background-size: cover;
   background-position: center center;
-  height: 88vh;
+  min-width: 100vh;
 }
 
 .informacoes-principais-container > div > h1 {
