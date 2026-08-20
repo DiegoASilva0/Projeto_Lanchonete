@@ -236,36 +236,44 @@ main {
 
 #categorias {
   display: block;
-  margin: 20px;
   text-align: center;
+  margin: 20px;
+}
+
+#categorias > h2 {
+  color: white;
+  font-size: 2rem;
 }
 
 .galeria {
     display: flex;
     flex-wrap: nowrap;
-    gap: 15px;
-    margin: 20px;
+    gap: 25px;
 
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
 
-    padding: 10px 0;
+    padding: 20px 0;
 
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
 
-.galeria a {
+.galeria > a {
     flex: 0 0 120px;
     width: 120px;
+    color: white;
+    text-decoration: none;
+
+    
+    font-weight: bold;
 }
 
 .galeria img {
     display: block;
     width: 100%;
     height: auto;
-    margin-right: 10px;
 }
 
 .galeria::-webkit-scrollbar {
