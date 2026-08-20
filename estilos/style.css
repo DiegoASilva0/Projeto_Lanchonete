@@ -105,7 +105,9 @@ img {
 }
 
 /* 
+====================
   imagem-principal
+====================  
 */
 
 main {
@@ -219,4 +221,71 @@ main {
   border: 1.5px solid rgba(255, 255, 255, 0.425);
   width: 260px;
   padding: 20px;
+}
+
+/* 
+========================
+ informacoes-categoria
+========================
+*/
+
+#informacoes-categoria {
+    background-color: var(--background);
+
+}
+
+#categorias {
+  display: block;
+  margin: 20px;
+  text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin: 20px;
+
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 10px 0;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.galeria a {
+    flex: 0 0 120px;
+    width: 120px;
+}
+
+.galeria img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.galeria::-webkit-scrollbar {
+    height: 8px;
+}
+
+.galeria::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 10px;
+}
+
+.galeria::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.galeria::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.Pedidos {
+  margin: 50px;
 }
