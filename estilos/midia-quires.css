@@ -1,4 +1,4 @@
-@media screen and (min-width: 925px) {
+@media screen and (min-width: 825px) {
   :root {
     --background: #0a0a0a;
     --surface: #111111;
@@ -50,6 +50,10 @@
 
     cursor: pointer;
   }
+  
+.background-principal {
+  height: 100vh;
+}  
 
   #carrinho-menu {
     display: none;
@@ -127,6 +131,48 @@
 
 .informacoes-estabelecimento {
   display: flex;
+}
+
+/* 
+========================
+ informacoes-categoria
+========================
+*/
+
+#informacoes-categoria {
+    background-color: var(--background);
+}
+
+#categorias {
+  text-align: center;
+  margin: 0px 20px;
+}
+
+#categorias > h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.galeria > div {
+  display: block;
+   border: 2px solid var(--border);
+   border-radius: 10px;
+   padding: 20px;
+}
+
+.galeria > div > a {
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.galeria > div > a > img {
+    width: 100%;
+}
+
+.Pedidos {
+  margin: 50px;
 }
 
 

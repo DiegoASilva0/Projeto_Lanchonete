@@ -112,6 +112,7 @@ img {
 
 main {
   color: wheat;
+  background-color: var(--background);
 }
 
 .background-principal {
@@ -122,10 +123,10 @@ main {
       rgba(0, 0, 0, 0.95)
     ),
     url("../imagens/background-lanche.png") no-repeat;
+    height: 100%;
 
   background-size: cover;
   background-position: center center;
-  height: 100vh;
   display: flex;
 }
 
@@ -203,6 +204,7 @@ main {
 
 .informacoes-estabelecimento {
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .estabelecimento > span {
@@ -230,14 +232,16 @@ main {
 */
 
 #informacoes-categoria {
-    background-color: var(--background);
+  background-color: var(--background);
+  margin: auto;
 
 }
 
-#categorias {
-  display: block;
+.categorias {
+  background-color: var(--surface);
+  border-radius: 10px 15px 0px 0px;
+  padding: 20px;
   text-align: center;
-  margin: 20px;
 }
 
 #categorias > h2 {
@@ -260,19 +264,21 @@ main {
     -webkit-overflow-scrolling: touch;
 }
 
-.galeria > a {
+.galeria > div {
+  display: flex;
+  margin: auto;
+}
+
+.galeria > div > a {
+   margin: auto;
     flex: 0 0 120px;
-    width: 120px;
     color: white;
     text-decoration: none;
-
-    
     font-weight: bold;
 }
 
-.galeria img {
-    display: block;
-    width: 100%;
+.galeria > div > a > img {
+    display: flex;
     height: auto;
 }
 
@@ -296,4 +302,89 @@ main {
 
 .Pedidos {
   margin: 50px;
+}
+
+
+/* 
+========================
+ Os Mais Pedidos
+========================
+*/
+
+#mais-pedidos {
+  display: inline-block;
+}
+
+#mais-pedidos h2 {
+  text-align: left;
+  color: var(--text);
+  margin: 35px 20px;
+}
+
+.mais-pedidos-div > div {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+
+.mais-pedidos-div > div > img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+
+
+.mais-pedidos-div > div > h3 {
+  font-size: 1.3rem;
+  padding: 8px;
+  text-align: left;
+  color: var(--text);
+}
+
+.mais-pedidos-div > div > p {
+  padding: 10px;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.mais-pedidos-div > div > span {
+  display: flex;
+  font-size: 1.6rem;
+  text-align: left;
+  margin: 5px;
+}
+
+input {
+  background-color: var(--primary);
+  padding: 5px 15px;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.valores {
+  display: flex;
+  margin: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.valores > span {
+  display: flex;
+  font-weight: bold;
+  text-align: left;
+  color: var(--text);
+  font-size: 1.6rem;
+  margin: 5px;
+}
+
+.valores > input {
+  margin-right: 10px;
+  text-align: right;
+  margin-left: auto;
+}
+
+.valores > input:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.1);
 }
