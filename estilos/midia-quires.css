@@ -28,7 +28,7 @@
     margin: auto;
   }
 
-   nav#menu-mobile {
+  nav#menu-mobile {
     display: block;
   }
 
@@ -46,14 +46,14 @@
 
     width: 100%;
     padding: 8px;
-   margin-right: 10px;
+    margin-right: 10px;
 
     cursor: pointer;
   }
-  
-.background-principal {
-  height: 100vh;
-}  
+
+  .background-principal {
+    height: 100vh;
+  }
 
   #carrinho-menu {
     display: none;
@@ -86,95 +86,197 @@
     background-color: transparent;
   }
 
+  .background-principal {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.95)),
+      url("../imagens/background-lanche.png") no-repeat;
 
-.background-principal {
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.95)
-    ),
-    url("../imagens/background-lanche.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-width: 100vh;
+  }
 
-  background-size: cover;
-  background-position: center center;
-  min-width: 100vh;
-}
+  .informacoes-principais-container > div > h1 {
+    color: var(--text);
+    margin-bottom: 15px;
+    font-size: 3rem;
+  }
 
-.informacoes-principais-container > div > h1 {
-  color: var(--text);
-  margin-bottom: 15px;
-  font-size: 3rem;
-}
+  .informacoes-principais-container > div > p {
+    display: block;
+    width: 500px;
+  }
 
-.informacoes-principais-container > div > p {
-  display: block;
-  width: 500px;
-}
+  #button-principais {
+    display: flex;
+  }
 
-#button-principais {
-  display: flex;
-}
+  #verCardapio,
+  #WhatsApp {
+    letter-spacing: 1.3px;
+    margin-bottom: 15px;
+    margin-right: 20px;
 
-#verCardapio, #WhatsApp {
-  letter-spacing: 1.3px;
-  margin-bottom: 15px;
-  margin-right: 20px;
+    align-items: center;
+    letter-spacing: 1.3px;
+  }
 
-  align-items: center;
-  letter-spacing: 1.3px;
-} 
+  #WhatsApp {
+    padding: 20px;
+  }
 
-#WhatsApp {
-  padding: 20px;
-}
+  .informacoes-estabelecimento {
+    display: flex;
+  }
 
-.informacoes-estabelecimento {
-  display: flex;
-}
-
-/* 
+  /* 
 ========================
  informacoes-categoria
 ========================
 */
 
-#informacoes-categoria {
+  #informacoes-categoria {
     background-color: var(--background);
-}
+    margin: 0px 20px;
+  }
 
-#categorias {
-  text-align: center;
-  margin: 0px 20px;
-}
+  #categorias {
+    text-align: center;
+  }
 
-#categorias > h2 {
-  color: white;
-  font-size: 2rem;
-}
+  #categorias > h2 {
+    color: white;
+    font-size: 2rem;
+  }
 
-.galeria > div {
-  display: block;
-   border: 2px solid var(--border);
-   border-radius: 10px;
-   padding: 20px;
-}
+  .galeria > div {
+    display: block;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
 
-.galeria > div > a {
+  .galeria > div > a {
     padding: 0px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
+  }
 
-.galeria > div > a > img {
+  .galeria > div > a > img {
     width: 100%;
+  }
+
+  .Pedidos {
+    margin: 50px;
+  }
+
+  /* 
+========================
+ Os Mais Pedidos
+========================
+*/
+
+  #mais-pedidos {
+    margin: auto;
+  }
+
+  #mais-pedidos h2 {
+    text-align: left;
+    color: var(--text);
+    margin: 20px 20px;
+  }
+
+  .mais-pedidos-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .mais-pedidos-div > div {
+    display: inline-block;
+    flex: 1 1 200px;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+  
+
+  .mais-pedidos-div > div > h3 {
+    padding: 8px;
+    text-align: left;
+    color: var(--text);
+  }
+
+  .mais-pedidos-div > div > p {
+    font-size: 15px;
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  .valores {
+    display: block;
+    margin-bottom: auto;
+  }
+
+  .valores-menor > span {
+    display: flex;
+    font-weight: bold;
+    text-align: left;
+    align-items: center;
+    color: var(--text);
+    font-size: clamp(1.2rem, 1.5vw, 1.3rem);
+  }
+
+  .valores-menor > input {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+
+   
+    padding: 2px 15px;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+  }
+
+  /* 
+========================
+      Avaliações
+========================
+*/
+
+#avaliacoes > div {
+  display: flex;
+  padding: 25px;
 }
 
-.Pedidos {
-  margin: 50px;
+#avaliacoes > h2 {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: var(--text);
 }
 
+#avaliacoes-container > div {
+  display: block;
+  width: 400px;
 
+  margin-left: 20px;
 
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+#avaliacoes-container > div > span {
+  color: var(--text);
+}
+
+#avaliacoes-container > div > p {
+  color: var(--text-secondary);
+  text-shadow: 2px 2px 2px var(--border);
+  margin-top: 10px;
+}
 }
