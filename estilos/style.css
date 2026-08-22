@@ -439,7 +439,7 @@ article {
 
 footer {
   border: 1px solid var(--border);
-  margin: 0px 20px;
+  margin: 0px;
   padding: 25px;
   padding-bottom: 0px;
   color: white;
