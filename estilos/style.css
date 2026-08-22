@@ -132,6 +132,10 @@ main {
   display: flex;
 }
 
+.informacoes-principais-container > div {
+  margin-top: 30px;
+}
+
 .informacoes-principais-container > div > h1 {
   color: var(--text);
   margin-bottom: 15px;
