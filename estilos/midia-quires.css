@@ -279,4 +279,19 @@
   text-shadow: 2px 2px 2px var(--border);
   margin-top: 10px;
 }
+
+/* 
+========================
+      Footer
+========================
+*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > div {
+  width: 300px;
+}
 }
