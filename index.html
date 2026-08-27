@@ -1,284 +1,268 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
 
-    <link rel="stylesheet" href="estilos/style.css" />
-    <link rel="stylesheet" href="estilos/midia-quires.css" />
-    <title>Document</title>
-  </head>
-  <body onresize="fecharMenu()">
-    <header>
-      <div>
-        <img src="logo/logo.png" alt="Logo" />
-        <i id="carrinho-menu" class="material-symbols-outlined"
-          >shopping_cart</i
-        >
-        <i id="burguer" class="material-symbols-outlined" onclick="clickmenu()"
-          >menu</i
-        >
-      </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-      <nav id="menu-mobile">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Lanches</a></li>
-          <li><a href="#">Pizza</a></li>
-          <li><a href="#">Açai</a></li>
-          <li><a href="#">Porções</a></li>
-          <li><a href="#">Combos</a></li>
-          <li><a href="#">Bebidas</a></li>
-          <li><a href="#">Contatos</a></li>
-        </ul>
-      </nav>
-      <i id="carrinho" class="material-symbols-outlined">shopping_cart</i>
-    </header>
+  <link rel="stylesheet" href="estilos/paginas.css">
+  <link rel="stylesheet" href="estilos/style.css" />
+  <link rel="stylesheet" href="estilos/midia-quires.css" />
+  
+  <title>Document</title>
+</head>
 
-    <main>
-      <article class="background-principal">
-        <div class="informacoes-principais-container">
-          <div>
-            <h1>
-              O melhor sabor, <br />
-              <span class="color-yellow">Pertinho de você!</span>
-            </h1>
-            <p>
-              Lanches, porções, pizzas e açaís feitos com ingredientes
-              selecionados para você.
-            </p>
+<body onresize="fecharMenu()">
+  <header>
+    <div>
+      <img src="logo/logo.png" alt="Logo" />
+      <i id="carrinho-menu" class="material-symbols-outlined">shopping_cart</i>
+      <i id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</i>
+    </div>
 
-            <div id="button-principais">
-              <button id="verCardapio">
-                <span class="material-symbols-outlined">menu_book</span> Ver
-                Cardápio
-              </button>
-              <button id="WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i>
-                Chamar no WhatsApp
-              </button>
+    <nav id="menu-mobile">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="pag/lanches.html">Lanches</a></li>
+        <li><a href="#">Pizza</a></li>
+        <li><a href="#">Açai</a></li>
+        <li><a href="#">Porções</a></li>
+        <li><a href="#">Combos</a></li>
+        <li><a href="#">Bebidas</a></li>
+        <li><a href="#">Contatos</a></li>
+      </ul>
+    </nav>
+    <i id="carrinho" class="material-symbols-outlined">shopping_cart</i>
+  </header>
+
+  <main>
+    <article class="background-principal">
+      <div class="informacoes-principais-container">
+        <div>
+          <h1>
+            O melhor sabor, <br />
+            <span class="color-yellow">Pertinho de você!</span>
+          </h1>
+          <p>
+            Lanches, porções, pizzas e açaís feitos com ingredientes
+            selecionados para você.
+          </p>
+
+          <div id="button-principais">
+            <button id="verCardapio">
+              <span class="material-symbols-outlined">menu_book</span> Ver
+              Cardápio
+            </button>
+            <button id="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+              Chamar no WhatsApp
+            </button>
+          </div>
+
+          <div class="informacoes-estabelecimento">
+
+            <div class="estabelecimento">
+              <span>
+                <i class="fa-solid fa-location-dot" id="localizacao-icon"></i>
+                Localização
+              </span>
+              <p>Rua das Delicias, 123</p>
+              <p>Centro - Sua Cidade/UF</p>
             </div>
 
-           <div class="informacoes-estabelecimento">
+            <div class="estabelecimento">
+              <span>
+                <i class="fa-solid fa-clock"></i>
+                Horário de atendimento
+              </span>
+              <p>Seg a Dom: 17h às 00h</p>
+              <p>Sexta e Sábado: até 01h</p>
+            </div>
 
-  <div class="estabelecimento" >
-    <span>
-      <i class="fa-solid fa-location-dot" id="localizacao-icon"></i>
-      Localização
-    </span>
-    <p>Rua das Delicias, 123</p>
-    <p>Centro - Sua Cidade/UF</p>
-  </div>
+            <div class="estabelecimento">
+              <span>
+                <i class="fa-solid fa-bag-shopping" id="compras-icon"></i>
+                Entrega
+              </span>
+              <p>Entrega rápida</p>
+              <p>para toda região</p>
+            </div>
 
-  <div class="estabelecimento">
-    <span>
-      <i class="fa-solid fa-clock"></i>
-      Horário de atendimento
-    </span>
-    <p>Seg a Dom: 17h às 00h</p>
-    <p>Sexta e Sábado: até 01h</p>
-  </div>
+          </div>
+        </div>
+      </div>
+    </article>
 
-  <div class="estabelecimento">
-    <span>
-      <i class="fa-solid fa-bag-shopping" id="compras-icon"></i>
-      Entrega
-    </span>
-    <p>Entrega rápida</p>
-    <p>para toda região</p>
-  </div>
-
-</div>
+    <section id="informacoes-categoria">
+      <article class="pedidos-conteudo">
+        <h2>Escolha uma Categoria</h2>
+        <div class="galeria">
+          <div>
+            <a href="#"><img src="imagens/icons-categorias/lanche.png" alt="" />Lanches</a>
+          </div>
+          <div>
+            <a href="#"><img src="imagens/icons-categorias/pizza.png" alt="" />
+              Pizza</a>
+          </div>
+          <div>
+            <a href="#"><img src="imagens/icons-categorias/acai.png" alt="" />Açai</a>
+          </div>
+          <div>
+            <a href="#"><img src="imagens/icons-categorias/porcoes.png" alt="" />Porções</a>
+          </div>
+          <div>
+            <a href="#"><img src="imagens/icons-categorias/combos.png" alt="" />Combos</a>
           </div>
         </div>
       </article>
+     
 
-      <section id="informacoes-categoria">
-        <article class="categorias">
-          <h2>Escolha uma Categoria</h2>
-          <div class="galeria">
-            <div>
-              <a href="#"
-                ><img
-                  src="imagens/icons-categorias/lanche.png"
-                  alt=""
-                />Lanches</a
-              >
-            </div>
-            <div>
-              <a href="#"
-                ><img src="imagens/icons-categorias/pizza.png" alt="" />
-                Pizza</a
-              >
-            </div>
-            <div>
-              <a href="#"
-                ><img src="imagens/icons-categorias/acai.png" alt="" />Açai</a
-              >
-            </div>
-            <div>
-              <a href="#"
-                ><img
-                  src="imagens/icons-categorias/porcoes.png"
-                  alt=""
-                />Porções</a
-              >
-            </div>
-            <div>
-              <a href="#"
-                ><img
-                  src="imagens/icons-categorias/combos.png"
-                  alt=""
-                />Combos</a
-              >
-            </div>
+      <article class="pedidos-conteudo">
+        <h2>Os Mais Pedidos</h2>
+        <section class="categorias" id="mais-pedidos">
+
+          <div class="produtos">
+
+            <article class="produto-card">
+              <img src="imagens/lanche-xtudo.jpg" alt="X-Tudo">
+              <div class="produto-info">
+                <h3>X-Tudo</h3>
+                <p>Pão, 2 carnes, queijo, presunto, ovo, bacon, salada e molho especial.</p>
+                <div class="produto-footer">
+                  <span class="preco">R$ 29,90</span>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar X-Tudo ao carrinho">+</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto-card">
+              <img src="imagens/lanche-xtudo.jpg" alt="Combo Smash">
+              <div class="produto-info">
+                <h3>Combo Smash</h3>
+                <p>Smash burger, batata frita e refrigerante em lata.</p>
+                <div class="produto-footer">
+                  <span class="preco">R$ 34,90</span>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar Combo Smash ao carrinho">+</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto-card">
+              <img src="imagens/porcao-batata.jpg" alt="Porção de batata frita com cheddar e bacon">
+              <div class="produto-info">
+                <h3>Porção de Batata</h3>
+                <p>Batata frita crocante com cheddar e bacon.</p>
+                <div class="produto-footer">
+                  <span class="preco">R$ 24,90</span>
+                  <button type="button" class="btn-adicionar"
+                    aria-label="Adicionar Porção de Batata ao carrinho">+</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto-card">
+              <img src="imagens/pizza-calabresa.jpg" alt="Pizza de calabresa">
+              <div class="produto-info">
+                <h3>Pizza Calabresa</h3>
+                <p>Calabresa, cebola, mussarela e orégano.</p>
+                <div class="produto-footer">
+                  <span class="preco">R$ 39,90</span>
+                  <button type="button" class="btn-adicionar"
+                    aria-label="Adicionar Pizza Calabresa ao carrinho">+</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto-card">
+              <img src="imagens/acai-copo.jpg" alt="Açaí de 500ml com granola, banana, morango e leite condensado">
+              <div class="produto-info">
+                <h3>Açaí 500ml</h3>
+                <p>Açaí com granola, banana, morango e leite condensado.</p>
+                <div class="produto-footer">
+                  <span class="preco">R$ 16,90</span>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho">+</button>
+                </div>
+              </div>
+            </article>
           </div>
-        </article>
+        </section>
+      </article>
 
-        <article class="categorias" id="mais-pedidos">
-          <h2>Os Mais Pedidos</h2>
-          <div class="mais-pedidos-div">
-            <div>
-              <img src="imagens/lanche-xtudo.jpg" alt="" />
-              <h3>X-Tudo</h3>
-              <p>
-                Pão, 2 carnes, queijo, preseunto, ovo, banco, salada e molho
-                especial
-              </p>
-
-              <div class="valores">
-                <div class="valores-menor">
-                  <span>R$ 29,90</span>
-                  <input type="button" value="+" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="imagens/lanche-xtudo.jpg" alt="" />
-              <h3>Combo Smash</h3>
-              <p>Smash burger, batara frita e refrígerante lata.</p>
-
-              <div class="valores">
-                <div class="valores-menor">
-                  <span>R$ 34,90</span>
-                  <input type="button" value="+" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="imagens/porcao-batata.jpg" alt="" />
-              <h3>Porção de Batata</h3>
-              <p>Batata frita crocante com cheddar e bacon.</p>
-              <div class="valores">
-                <div class="valores-menor">
-                  <span>R$ 24,90</span>
-                  <input type="button" value="+" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="imagens/pizza-calabresa.jpg" alt="" />
-              <h3>Pizza Calabresa</h3>
-              <p>Calabresa, cebola, mussarela e orégano</p>
-              <div class="valores">
-                <div class="valores-menor">
-                  <span>R$ 39,90</span>
-                  <input type="button" value="+" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="imagens/acai-copo.jpg" alt="" />
-              <h3>Açaí 500ml</h3>
-              <p>Açai com granola, banana, morang e leite condensado.</p>
-              <div class="valores">
-                <div class="valores-menor">
-                  <span>R$ 16,90</span>
-                  <input type="button" value="+" />
-                </div>
-              </div>
-            </div>
+      <article id="avaliacoes">
+        <h2>⭐ Avaliações dos Clientes</h2>
+        <div id="avaliacoes-container">
+          <div>
+            <span>Lucas Pereira <br> ⭐⭐⭐⭐⭐</span>
+            <p>Lanche sensacional! Chegou rápido e muito bem embalado. Recomendo!</p>
           </div>
-        </article>
-
-        <article id="avaliacoes">
-            <h2>⭐ Avaliações dos Clientes</h2>
-            <div id="avaliacoes-container">
-              <div>
-                <span>Lucas Pereira <br> ⭐⭐⭐⭐⭐</span>
-                <p>Lanche sensacional! Chegou rápido e muito bem embalado. Recomendo!</p>
-              </div>
-              <div>
-                <span>Juliana Costa <br> ⭐⭐⭐⭐⭐</span>
-                <p>A pizza é incrível! Massa leve e bem recheada. Ja virei cliente fiel 😍</p>
-              </div>
-              <div>
-                <span>Rafael Almeida <br> ⭐⭐⭐⭐⭐</span>
-                <p>Melhor açai da cidade! Sempre peço aqui, nunca me decepciono.</p>
-              </div>
-            </div>
-        </article>
-      </section>
-    </main>
-    <footer>
-        <div>
-          <img src="logo/logo.png" alt="Logo Da Loja">
-          <p>Qualidade e sabor que você sente em cada pedido.</p>
-           <a href="#">
-            <i class="fa-brands fa-instagram" id="instagram-icon"></i>
-          </a>
-
-          <a href="#">
-            <i class="fa-brands fa-tiktok" id="tiktok-icon"></i>
-          </a>
-
-          <a href="#">
-            <i class="fa-brands fa-whatsapp" id="WhatsApp-icon"></i>
-          </a>
+          <div>
+            <span>Juliana Costa <br> ⭐⭐⭐⭐⭐</span>
+            <p>A pizza é incrível! Massa leve e bem recheada. Ja virei cliente fiel 😍</p>
+          </div>
+          <div>
+            <span>Rafael Almeida <br> ⭐⭐⭐⭐⭐</span>
+            <p>Melhor açai da cidade! Sempre peço aqui, nunca me decepciono.</p>
+          </div>
         </div>
-        <ul>
-          <h3>Navegação</h3>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Lanches</a></li>
-          <li><a href="#">Pizza</a></li>
-          <li><a href="#">Porções</a></li>
-          <li><a href="#">Açai</a></li>
-          <li><a href="#">Combos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-        <ul class="localizacao-info">
-          <h3>Informações</h3>
+      </article>
+    </section> 
+  </main>
 
-          <li>
-            <i class="fa-solid fa-location-dot" id="localizacao-icon"></i>
-            Rua das Delicias, 123 - Centro - Sua Cidade/UF
-          </li>
 
-          <li>
-            <i class="fa-solid fa-clock"></i>
-            Seg a Dom: 17h às 00h
-          </li>
+  <footer>
+    <div>
+      <img src="logo/logo.png" alt="Logo Da Loja">
+      <p>Qualidade e sabor que você sente em cada pedido.</p>
+      <a href="#">
+        <i class="fa-brands fa-instagram" id="instagram-icon"></i>
+      </a>
 
-          <li>
-            <i class="fa-solid fa-phone" id="telefone-icon"></i>
-            (61) 99999-9999
-          </li>
-        </ul>
-        <ul>
-          <h3>Formas de pagamento</h3>
-          <img src="imagens/formasDePagamento.png" alt="Formas de pagamento">
-        </ul>
-    </footer>
+      <a href="#">
+        <i class="fa-brands fa-tiktok" id="tiktok-icon"></i>
+      </a>
 
-    <script src="js/script.js"></script>
-  </body>
+      <a href="#">
+        <i class="fa-brands fa-whatsapp" id="WhatsApp-icon"></i>
+      </a>
+    </div>
+    <ul>
+      <h3>Navegação</h3>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Lanches</a></li>
+      <li><a href="#">Pizza</a></li>
+      <li><a href="#">Porções</a></li>
+      <li><a href="#">Açai</a></li>
+      <li><a href="#">Combos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <ul class="localizacao-info">
+      <h3>Informações</h3>
+
+      <li>
+        <i class="fa-solid fa-location-dot" id="localizacao-icon"></i>
+        Rua das Delicias, 123 - Centro - Sua Cidade/UF
+      </li>
+
+      <li>
+        <i class="fa-solid fa-clock"></i>
+        Seg a Dom: 17h às 00h
+      </li>
+
+      <li>
+        <i class="fa-solid fa-phone" id="telefone-icon"></i>
+        (61) 99999-9999
+      </li>
+    </ul>
+    <ul>
+      <h3>Formas de pagamento</h3>
+      <img src="imagens/formasDePagamento.png" alt="Formas de pagamento">
+    </ul>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>

@@ -4,6 +4,7 @@ function clickmenu() {
   if (menu.style.display == "block") {
     menu.style.display = "none";
   } else {
+    menu.style.transition = "300ms";
     menu.style.display = "block";
   }
 }

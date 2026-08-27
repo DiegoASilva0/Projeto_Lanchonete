@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/midia-quires.css">
+    <link rel="stylesheet" href="../estilos/paginas.css">
+    <title>Lanches</title>
+</head>
+
+<body>
+    </head>
+
+    <body onresize="fecharMenu()">
+        <header>
+            <div>
+                <img src="../logo/logo.png" alt="Logo" />
+                <i id="carrinho-menu" class="material-symbols-outlined">shopping_cart</i>
+                <i id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</i>
+            </div>
+
+            <nav id="menu-mobile">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Lanches</a></li>
+                    <li><a href="#">Pizza</a></li>
+                    <li><a href="#">Açai</a></li>
+                    <li><a href="#">Porções</a></li>
+                    <li><a href="#">Combos</a></li>
+                    <li><a href="#">Bebidas</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+            <i id="carrinho" class="material-symbols-outlined">shopping_cart</i>
+        </header>
+
+    <main class="main-produtos">
+        <section class="pagina-titulo">
+            <h1>Lanches</h1>
+            <p>Os melhores lanches preparados com ingredientes frescos e muito sabor!</p>
+        </section>
+        
+        <section class="categorias" id="mais-pedidos">
+
+            <div class="produtos">
+
+                <article class="produto-card">
+                    <img src="../imagens/pedidos/hamburguer/X-tudo.png" alt="X-Tudo">
+                    <div class="produto-info">
+                        <h3>X-Tudo</h3>
+                        <p>Hambúrguer, queijo, presunto, bacon, ovo, calabresa, batata palha, alface, tomate, cebola e molho especial.</p>
+                        <div class="produto-footer">
+                            <span class="preco">R$ 29,90</span>
+                            <button type="button" class="btn-adicionar" aria-label="Adicionar X-Tudo ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="produto-card">
+                    <img src="../imagens/pedidos/hamburguer/X-burgue.png" alt="Combo Smash">
+                    <div class="produto-info">
+                        <h3>X-Salada</h3>
+                        <p>Hambúrguer, queijo, presunto, bacon, ovo, calabresa, batata palha, alface, tomate, cebola e molho especial.</p>
+                        <div class="produto-footer">
+                            <span class="preco">R$ 19,90</span>
+                            <button type="button" class="btn-adicionar" aria-label="Adicionar Combo Smash ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <img src="../imagens/pedidos/hamburguer/X-bacon.png" alt="Porção de batata frita com cheddar e bacon">
+                    <div class="produto-info">
+                        <h3>X-Bacon</h3>
+                        <p>Hambúrguer artesanal, queijo cheddar, bacon crocante, alface, tomate, cebola e molho especial.</p>
+                        <div class="produto-footer">
+                            <span class="preco">R$ 24,90</span>
+                            <button type="button" class="btn-adicionar" aria-label="Adicionar Porção de Batata ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <img src="../imagens/pedidos/hamburguer/calabresa.png" alt="Pizza de calabresa">
+                    <div class="produto-info">
+                        <h3>X-Calabresa</h3>
+                        <p>Hambúrguer, queijo cheddar, calabresa grelhada, cebola caramelizada, alface, tomate e molho especial.</p>
+                        <div class="produto-footer">
+                            <span class="preco">R$ 25,90</span>
+                            <button type="button" class="btn-adicionar" aria-label="Adicionar Pizza Calabresa ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <img src="../imagens/pedidos/hamburguer/X-egg.png" alt="Açaí de 500ml com granola, banana, morango e leite condensado">
+                    <div class="produto-info">
+                        <h3>X-Egg</h3>
+                        <p>Hambúrguer suculento, queijo cheddar, ovo, alface, tomate, cebola e molho especial.</p>
+                        <div class="produto-footer">
+                            <span class="preco">R$ 22,90</span>
+                            <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                 <article class="produto-card">
+                    <img src="../imagens/pedidos/hamburguer/X-burgue.png" alt="Açaí de 500ml com granola, banana, morango e leite condensado">
+                    <div class="produto-info">
+                        <h3>X-Burger</h3>
+                        <p>Hambúrguer grelhado, queijo derretido, alface, tomate, cebola e molho da casa.</p>
+                        <div class="produto-footer">
+                            <span class="preco">R$ 18,90</span>
+                            <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                  <article class="produto-card">
+                    <img src="../imagens/pedidos/hamburguer/hamburguer_kids.png" alt="Açaí de 500ml com granola, banana, morango e leite condensado">
+                    <div class="produto-info">
+                        <h3>X-Kids</h3>
+                        <p>Hambúrguer menor, queijo derretido, alface, tomate e molho especial. Ideal para a criançada.</p>
+                        <div class="produto-footer">
+                            <span class="preco">R$ 14,90</span>
+                            <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                  <article class="produto-card">
+                    <img src="../imagens/pedidos/hamburguer/X-smash.png" alt="Açaí de 500ml com granola, banana, morango e leite condensado">
+                    <div class="produto-info">
+                        <h3>X-Smash Duplo</h3>
+                        <p>Dois smash burgers bem selados, cheddar derretido, cebola caramelizada e molho especial da casa.</p>
+                        <div class="produto-footer">
+                            <span class="preco">R$ 27,90</span>
+                            <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

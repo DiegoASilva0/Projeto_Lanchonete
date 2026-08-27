@@ -205,7 +205,7 @@ main {
 .informacoes-estabelecimento {
   margin-top: 15px;
   margin-bottom: 30px;
-}
+} 
 
 .estabelecimento > span {
   color: var(--text);
@@ -245,7 +245,7 @@ article {
   margin: auto;
 }
 
-.categorias {
+.pedidos-conteudo {
   background-color: var(--surface);
   border-bottom: 2px solid var(--border);
   border-radius: 10px 15px 0px 0px;
@@ -253,7 +253,7 @@ article {
   text-align: center;
 }
 
-.categorias > h2 {
+.pedidos-conteudo > h2 {
   color: white;
   margin: 20px 0px;
   font-size: 2rem;
@@ -310,90 +310,12 @@ article {
   background: #555;
 }
 
+.galeria > div:hover {
+  border: 1px solid var(--primary-hover);
+}
+
 .Pedidos {
   margin: 50px;
-}
-
-/* 
-========================
- Os Mais Pedidos
-========================
-*/
-
-#mais-pedidos {
-  display: inline-block;
-  border-bottom: 2px solid var(--border);
-}
-
-#mais-pedidos h2 {
-  text-align: left;
-  color: var(--text);
-  margin: 35px 20px;
-}
-
-.mais-pedidos-div > div {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-
-  border-radius: 10px;
-  margin: 20px 10px;
-}
-
-.mais-pedidos-div > div > img {
-  border-radius: 10px 10px 0px 0px;
-  width: 100%;
-}
-
-.mais-pedidos-div > div > h3 {
-  font-size: 1.3rem;
-  padding: 8px;
-  text-align: left;
-  color: var(--text);
-}
-
-.mais-pedidos-div > div > p {
-  padding: 10px;
-  color: var(--text-secondary);
-  text-align: left;
-}
-
-.valores {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 10px;
-  margin-bottom: 20px;
-}
-
-.valores-menor > span {
-  display: flex;
-  font-weight: bold;
-  text-align: left;
-  color: var(--text);
-  font-size: 1.6rem;
-  margin: 5px;
-}
-
-.valores-menor {
-  display: flex;
-}
-
-.valores-menor > input {
-  margin-right: 10px;
-  text-align: right;
-  margin-left: auto;
-
-  background-color: var(--primary);
-  padding: 5px 15px;
-  font-size: 2rem;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.valores > input:hover {
-  background-color: var(--primary-hover);
-  transform: scale(1.1);
 }
 
 /* 

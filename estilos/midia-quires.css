@@ -67,12 +67,13 @@
     border-radius: 10px;
     cursor: pointer;
     margin: 10px;
-    margin-left: auto;
+    margin-left: 0px;
+    margin-right: 35px;
   }
 
   #carrinho:hover {
     background-color: var(--primary);
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 300ms;
   }
 
@@ -176,6 +177,7 @@
  Os Mais Pedidos
 ========================
 */
+/*
 
   #mais-pedidos {
     margin: auto;
@@ -238,6 +240,7 @@
     border-radius: 10px;
     border: none;
   }
+*/
 
   /* 
 ========================
@@ -296,3 +299,5 @@ footer > div {
   width: 300px;
 }
 }
+
+
