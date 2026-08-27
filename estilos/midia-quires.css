@@ -130,6 +130,9 @@
     display: flex;
   }
 
+
+  
+
   /* 
 ========================
  informacoes-categoria
@@ -172,75 +175,6 @@
     margin: 50px;
   }
 
-  /* 
-========================
- Os Mais Pedidos
-========================
-*/
-/*
-
-  #mais-pedidos {
-    margin: auto;
-  }
-
-  #mais-pedidos h2 {
-    text-align: left;
-    color: var(--text);
-    margin: 20px 20px;
-  }
-
-  .mais-pedidos-div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .mais-pedidos-div > div {
-    display: inline-block;
-    flex: 1 1 200px;
-    margin: 0px;
-    padding-bottom: 10px;
-  }
-  
-
-  .mais-pedidos-div > div > h3 {
-    padding: 8px;
-    text-align: left;
-    color: var(--text);
-  }
-
-  .mais-pedidos-div > div > p {
-    font-size: 15px;
-    text-align: left;
-    padding-right: 30px;
-  }
-
-  .valores {
-    display: block;
-    margin-bottom: auto;
-  }
-
-  .valores-menor > span {
-    display: flex;
-    font-weight: bold;
-    text-align: left;
-    align-items: center;
-    color: var(--text);
-    font-size: clamp(1.2rem, 1.5vw, 1.3rem);
-  }
-
-  .valores-menor > input {
-    background-color: var(--primary);
-    display: flex;
-    align-items: center;
-
-   
-    padding: 2px 15px;
-    font-size: 2rem;
-    border-radius: 10px;
-    border: none;
-  }
-*/
 
   /* 
 ========================
@@ -299,5 +233,6 @@ footer > div {
   width: 300px;
 }
 }
+
 
 

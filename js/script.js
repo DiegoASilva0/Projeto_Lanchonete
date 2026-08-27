@@ -1,20 +1,35 @@
 function clickmenu() {
-  let menu = document.getElementById("menu-mobile");
+    const menu = document.getElementById("menu-mobile");
 
-  if (menu.style.display == "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.transition = "300ms";
-    menu.style.display = "block";
-  }
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
 }
 
-/* function fecharMenu() {
-  let menu = document.getElementById("menu-mobile");
+function fecharMenu() {
+    const menu = document.getElementById("menu-mobile");
 
-  if (window.innerWidth >= 825) {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
-} */
+    if (menu) {
+        menu.style.display = "none";
+    }
+}
+
+function abrirCarrinho() {
+    const carrinho = document.getElementById("compras");
+    const overlay = document.getElementById("overlay");
+
+    console.log("Abrindo carrinho...");
+
+    carrinho.classList.add("aberto");
+    overlay.classList.add("aberto");
+}
+
+function fecharCarrinho() {
+    const carrinho = document.getElementById("compras");
+    const overlay = document.getElementById("overlay");
+
+    carrinho.classList.remove("aberto");
+    overlay.classList.remove("aberto");
+}

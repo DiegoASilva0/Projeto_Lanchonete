@@ -15,11 +15,11 @@
   <title>Document</title>
 </head>
 
-<body onresize="fecharMenu()">
+<body>
   <header>
     <div>
       <img src="logo/logo.png" alt="Logo" />
-      <i id="carrinho-menu" class="material-symbols-outlined">shopping_cart</i>
+      <i id="carrinho-menu" class="material-symbols-outlined"  onclick="abrirCarrinho()">shopping_cart</i>
       <i id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</i>
     </div>
 
@@ -35,8 +35,42 @@
         <li><a href="#">Contatos</a></li>
       </ul>
     </nav>
-    <i id="carrinho" class="material-symbols-outlined">shopping_cart</i>
+    <i
+    id="carrinho"
+    class="material-symbols-outlined"
+    onclick="abrirCarrinho()">
+    shopping_cart
+</i>
   </header>
+
+<div id="overlay" onclick="fecharCarrinho()"></div>
+
+<section id="compras" class="carrinho_lista">
+  <button id="fechar-carrinho" onclick="fecharCarrinho()" aria-label="Fechar carrinho">
+        <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <h1>Meus Pedidos</h1>
+
+    <div id="msg_carrinho">
+        
+
+    </div>
+
+    <div id="finalizar_pedidos">
+
+        <div class="subtotal">
+            <span>Subtotal</span>
+            <span>R$ 0,00</span>
+        </div>
+
+        <button type="button" class="btn_finalizarPedido">
+            Finalizar Pedido
+        </button>
+
+    </div>
+
+</section>
 
   <main>
     <article class="background-principal">
