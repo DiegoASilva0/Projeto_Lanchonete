@@ -659,5 +659,34 @@ footer > ul > img {
     cursor: pointer;
 }
 
+/* 
+=========================
+ Aviso Pedido Adicionado
+==========================
+*/
+
+#adicionadoPedido {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+
+  background-color: white;
+  justify-self: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#adicionadoPedido > h1 {
+  font-size: 18px;
+}
+
+#adicionadoPedido > p {
+  color: green;
+  font-weight: bold;
+}
 
 

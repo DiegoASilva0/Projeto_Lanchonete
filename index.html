@@ -16,6 +16,10 @@
 </head>
 
 <body>
+  <div id="adicionadoPedido">
+    <h1>Lanchonete</h1>
+    <p>Pedidos Adicionado Com Sucesso</p>
+  </div>
   <header>
     <div>
       <img src="logo/logo.png" alt="Logo" />
@@ -140,10 +144,10 @@
               Pizza</a>
           </div>
           <div>
-            <a href="#"><img src="imagens/icons-categorias/acai.png" alt="" />Açai</a>
+            <a href="#"><img src="imagens/icons-categorias/porcoes.png" alt="" />Porções</a>
           </div>
           <div>
-            <a href="#"><img src="imagens/icons-categorias/porcoes.png" alt="" />Porções</a>
+           <a href="#"><img src="imagens/icons-categorias/acai.png" alt="" />Bebidas</a>
           </div>
         </div>
       </article>
@@ -156,25 +160,25 @@
           <div class="produtos">
 
             <article class="produto-card">
-              <img src="imagens/lanche-xtudo.jpg" alt="X-Tudo">
+              <img src="imagens/pedidos/hamburguer/X-tudo.png" alt="X-Tudo">
               <div class="produto-info">
                 <h3>X-Tudo</h3>
-                <p>Pão, 2 carnes, queijo, presunto, ovo, bacon, salada e molho especial.</p>
+                <p>Hambúrguer, queijo, presunto, bacon, ovo, calabresa, batata palha, alface, tomate, cebola e molho especial.</p>
                 <div class="produto-footer">
                   <span class="preco">R$ 29,90</span>
-                  <button type="button" class="btn-adicionar" aria-label="Adicionar X-Tudo ao carrinho">+</button>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar X-Tudo ao carrinho" onclick="adicionarAoCarrinho(hamburguer[0])">+</button>
                 </div>
               </div>
             </article>
 
             <article class="produto-card">
-              <img src="imagens/lanche-xtudo.jpg" alt="Combo Smash">
+              <img src="imagens/pedidos/hamburguer/X-smash.png" alt="Combo Smash">
               <div class="produto-info">
-                <h3>Combo Smash</h3>
-                <p>Smash burger, batata frita e refrigerante em lata.</p>
+                <h3>X-Smash Duplo</h3>
+                <p>Dois smash burgers bem selados, cheddar derretido, cebola caramelizada e molho especial da casa.</p>
                 <div class="produto-footer">
-                  <span class="preco">R$ 34,90</span>
-                  <button type="button" class="btn-adicionar" aria-label="Adicionar Combo Smash ao carrinho">+</button>
+                  <span class="preco">R$ 27,90</span>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar Combo Smash ao carrinho" onclick="adicionarAoCarrinho(hamburguer[7])">+</button>
                 </div>
               </div>
             </article>
@@ -251,8 +255,7 @@
       <li><a href="/pag/lanches.html">Lanches</a></li>
       <li><a href="#">Pizza</a></li>
       <li><a href="#">Porções</a></li>
-      <li><a href="#">Açai</a></li>
-      <li><a href="#">Combos</a></li>
+      <li><a href="#">Bebidas</a></li>
       <li><a href="#">Contato</a></li>
     </ul>
     <ul class="localizacao-info">

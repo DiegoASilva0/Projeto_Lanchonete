@@ -1,4 +1,5 @@
 var carrinho_msg = document.getElementById("carrinho_msg");
+const pedidoAdicionado = document.getElementById("adicionadoPedido")
 
 let carrinhoAdicionado = [];
 
@@ -61,6 +62,12 @@ function adicionarAoCarrinho(produto) {
 
   carrinho_msg.innerHTML = atualizarMgCarrinho();
   console.log(produto);
+
+  pedidoAdicionado.style.display = "block";
+
+  setTimeout(() => {
+    pedidoAdicionado.style.display = "none";
+  }, 2500);
 }
 
 function aumentarQuantidade(id) {
