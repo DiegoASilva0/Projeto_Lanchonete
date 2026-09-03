@@ -116,6 +116,15 @@
     transform: scale(1.02);
 }
 
+.btn-danger {
+    background-color: var(--surface);
+    border: none;
+    color: red;
+    font-size: 20px;
+    padding: 6px;
+    cursor: pointer;
+}
+
 @media (max-width: 900px) {
 
     .produtos {
