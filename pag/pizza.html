@@ -33,7 +33,6 @@
                     <li><a href="#">Pizza</a></li>
                     <li><a href="porcoes.html">Porções</a></li>
                     <li><a href="bebidas.html">Bebidas</a></li>
-                    <li><a href="#">Contatos</a></li>
                 </ul>
             </nav>
             <i id="carrinho" class="material-symbols-outlined" onclick="abrirCarrinho()">
@@ -53,9 +52,7 @@
             <div id="msg_carrinho">
                 <h2>🛒 Seu carrinho</h2>
 
-                <div id="carrinho_msg">
-                
-                    
+                <div id="carrinho_msg"> 
             </div>
 
             <div id="finalizar_pedidos">
@@ -83,123 +80,137 @@
                 <div class="produtos">
 
                     <article class="produto-card">
-                        <img src="../imagens/pedidos/hamburguer/X-tudo.png" alt="X-Tudo">
+                        <img src="../imagens/pedidos/pizza/pizza_calabresa.png" alt="Molho de tomate, mussarela, calabresa fatiada, cebola e orégano.">
                         <div class="produto-info">
-                            <h3>X-Tudo</h3>
-                            <p>Hambúrguer, queijo, presunto, bacon, ovo, calabresa, batata palha, alface, tomate, cebola e
-                                molho especial.</p>
+                            <h3>Calabresa</h3>
+                            <p>Molho de tomate, mussarela, calabresa fatiada, cebola e orégano.</p>
                             <div class="produto-footer">
-                                <span class="preco">R$ 29,90</span>
+                                <span class="preco">R$ 39,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar X-Tudo ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[0])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[9])">+</button>
                             </div>
                         </div>
                     </article>
 
                     <article class="produto-card">
-                        <img src="../imagens/pedidos/hamburguer/X-burgue.png" alt="Combo Smash">
+                        <img src="../imagens/pedidos/pizza/pizza_frango_catupiry.png" alt="Frango desfiado, mussarela, Catupiry cremoso e orégano.">
                         <div class="produto-info">
-                            <h3>X-Salada</h3>
-                            <p>Hambúrguer, queijo, presunto, bacon, ovo, calabresa, batata palha, alface, tomate, cebola e
-                                molho especial.</p>
+                            <h3>Frango com Catupiry</h3>
+                            <p>Frango desfiado, mussarela, Catupiry cremoso e orégano.</p>
                             <div class="produto-footer">
-                                <span class="preco">R$ 19,90</span>
+                                <span class="preco">R$ 49,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar Combo Smash ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[1])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[10])">+</button>
                             </div>
                         </div>
                     </article>
 
                     <article class="produto-card">
-                        <img src="../imagens/pedidos/hamburguer/X-bacon.png"
-                            alt="Porção de batata frita com cheddar e bacon">
+                        <img src="../imagens/pedidos/pizza/pizza_portuguesa.png"
+                            alt="Mussarela, presunto, ovos, cebola, azeitonas e orégano.">
                         <div class="produto-info">
-                            <h3>X-Bacon</h3>
-                            <p>Hambúrguer artesanal, queijo cheddar, bacon crocante, alface, tomate, cebola e molho
-                                especial.</p>
+                            <h3>Portuguesa</h3>
+                            <p>Mussarela, presunto, ovos, cebola, azeitonas e orégano.</p>
                             <div class="produto-footer">
                                 <span class="preco">R$ 24,90</span>
                                 <button type="button" class="btn-adicionar"
                                     aria-label="Adicionar Porção de Batata ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[2])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[11])">+</button>
                             </div>
                         </div>
                     </article>
 
                     <article class="produto-card">
-                        <img src="../imagens/pedidos/hamburguer/calabresa.png" alt="Pizza de calabresa">
+                        <img src="../imagens/pedidos/pizza/pizza_quatro_queijos.png" alt="Mussarela, provolone, parmesão e Catupiry em uma combinação cremosa.">
                         <div class="produto-info">
-                            <h3>X-Calabresa</h3>
-                            <p>Hambúrguer, queijo cheddar, calabresa grelhada, cebola caramelizada, alface, tomate e molho
-                                especial.</p>
+                            <h3>Quatro Queijos</h3>
+                            <p>Mussarela, provolone, parmesão e Catupiry em uma combinação cremosa.</p>
                             <div class="produto-footer">
-                                <span class="preco">R$ 25,90</span>
+                                <span class="preco">R$ 47,90</span>
                                 <button type="button" class="btn-adicionar"
                                     aria-label="Adicionar Pizza Calabresa ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[3])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[12])">+</button>
                             </div>
                         </div>
                     </article>
 
                     <article class="produto-card">
-                        <img src="../imagens/pedidos/hamburguer/X-egg.png"
-                            alt="Açaí de 500ml com granola, banana, morango e leite condensado">
+                        <img src="../imagens/pedidos/pizza/pizza_bacon.png"
+                            alt="Mussarela, bacon crocante, tomate, cebola e orégano.">
                         <div class="produto-info">
-                            <h3>X-Egg</h3>
-                            <p>Hambúrguer suculento, queijo cheddar, ovo, alface, tomate, cebola e molho especial.</p>
+                            <h3>Bacon Especial</h3>
+                            <p>Mussarela, bacon crocante, tomate, cebola e orégano.</p>
                             <div class="produto-footer">
-                                <span class="preco">R$ 22,90</span>
+                                <span class="preco">R$ 45,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[4])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[13])">+</button>
                             </div>
                         </div>
                     </article>
 
                     <article class="produto-card">
-                        <img src="../imagens/pedidos/hamburguer/X-burgue.png"
-                            alt="Açaí de 500ml com granola, banana, morango e leite condensado">
+                        <img src="../imagens/pedidos/pizza/pizza_chocolate_morango.png"
+                            alt="Chocolate cremoso, morangos frescos e um toque de leite condensado.">
                         <div class="produto-info">
-                            <h3>X-Burger</h3>
-                            <p>Hambúrguer grelhado, queijo derretido, alface, tomate, cebola e molho da casa.</p>
+                            <h3>Chocolate com Morango</h3>
+                            <p>Chocolate cremoso, morangos frescos e um toque de leite condensado.</p>
                             <div class="produto-footer">
-                                <span class="preco">R$ 18,90</span>
+                                <span class="preco">R$ 42,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[5])">+</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="produto-card">
-                        <img src="../imagens/pedidos/hamburguer/hamburguer_kids.png"
-                            alt="Açaí de 500ml com granola, banana, morango e leite condensado">
-                        <div class="produto-info">
-                            <h3>X-Kids</h3>
-                            <p>Hambúrguer menor, queijo derretido, alface, tomate e molho especial. Ideal para a criançada.
-                            </p>
-                            <div class="produto-footer">
-                                <span class="preco">R$ 14,90</span>
-                                <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[6])">+</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="produto-card">
-                        <img src="../imagens/pedidos/hamburguer/X-smash.png"
-                            alt="Açaí de 500ml com granola, banana, morango e leite condensado">
-                        <div class="produto-info">
-                            <h3>X-Smash Duplo</h3>
-                            <p>Dois smash burgers bem selados, cheddar derretido, cebola caramelizada e molho especial da casa.</p>
-                            <div class="produto-footer">
-                                <span class="preco">R$ 27,90</span>
-                                <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[7])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[14])">+</button>
                             </div>
                         </div>
                     </article>
                 </div>
             </section>
         </main>
+        <footer>
+    <div>
+      <img src="../logo/logo.png" alt="Logo Da Loja">
+      <p>Qualidade e sabor que você sente em cada pedido.</p>
+      <a href="#">
+        <i class="fa-brands fa-instagram" id="instagram-icon"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-tiktok" id="tiktok-icon"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-whatsapp" id="WhatsApp-icon"></i>
+      </a>
+    </div>
+    <ul>
+      <h3>Navegação</h3>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="/pag/lanches.html">Lanches</a></li>
+      <li><a href="pizza.html">Pizza</a></li>
+      <li><a href="porcoes.html">Porções</a></li>
+      <li><a href="bebidas.html">Bebidas</a></li>
+    </ul>
+    <ul class="localizacao-info">
+      <h3>Informações</h3>
+
+      <li>
+        <i class="fa-solid fa-location-dot" id="localizacao-icon"></i>
+        Rua das Delicias, 123 - Centro - Sua Cidade/UF
+      </li>
+
+      <li>
+        <i class="fa-solid fa-clock"></i>
+        Seg a Dom: 17h às 00h
+      </li>
+
+      <li>
+        <i class="fa-solid fa-phone" id="telefone-icon"></i>
+        (61) 99999-9999
+      </li>
+    </ul>
+    <ul>
+      <h3>Formas de pagamento</h3>
+      <img src="../imagens/formasDePagamento.png" alt="Formas de pagamento">
+    </ul>
+  </footer>
 
         <script src="../js/script.js"></script>
         <script src="../js/carinho.js"></script>

@@ -33,7 +33,6 @@
                     <li><a href="pizza.html">Pizza</a></li>
                     <li><a href="porcoes.html">Porções</a></li>
                     <li><a href="bebidas.html">Bebidas</a></li>
-                    <li><a href="#">Contatos</a></li>
                 </ul>
             </nav>
             <i id="carrinho" class="material-symbols-outlined" onclick="abrirCarrinho()">
@@ -91,7 +90,7 @@
                             <div class="produto-footer">
                                 <span class="preco">R$ 29,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar X-Tudo ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[0])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[0])">+</button>
                             </div>
                         </div>
                     </article>
@@ -105,7 +104,7 @@
                             <div class="produto-footer">
                                 <span class="preco">R$ 19,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar Combo Smash ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[1])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[1])">+</button>
                             </div>
                         </div>
                     </article>
@@ -121,7 +120,7 @@
                                 <span class="preco">R$ 24,90</span>
                                 <button type="button" class="btn-adicionar"
                                     aria-label="Adicionar Porção de Batata ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[2])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[2])">+</button>
                             </div>
                         </div>
                     </article>
@@ -136,7 +135,7 @@
                                 <span class="preco">R$ 25,90</span>
                                 <button type="button" class="btn-adicionar"
                                     aria-label="Adicionar Pizza Calabresa ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[3])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[3])">+</button>
                             </div>
                         </div>
                     </article>
@@ -150,7 +149,7 @@
                             <div class="produto-footer">
                                 <span class="preco">R$ 22,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[4])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[4])">+</button>
                             </div>
                         </div>
                     </article>
@@ -164,7 +163,7 @@
                             <div class="produto-footer">
                                 <span class="preco">R$ 18,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[5])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[5])">+</button>
                             </div>
                         </div>
                     </article>
@@ -179,7 +178,7 @@
                             <div class="produto-footer">
                                 <span class="preco">R$ 14,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[6])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[6])">+</button>
                             </div>
                         </div>
                     </article>
@@ -193,13 +192,60 @@
                             <div class="produto-footer">
                                 <span class="preco">R$ 27,90</span>
                                 <button type="button" class="btn-adicionar" aria-label="Adicionar Açaí 500ml ao carrinho"
-                                    onclick="adicionarAoCarrinho(hamburguer[7])">+</button>
+                                    onclick="adicionarAoCarrinho(produtoCadastrado[7])">+</button>
                             </div>
                         </div>
                     </article>
                 </div>
             </section>
         </main>
+        <footer>
+    <div>
+      <img src="../logo/logo.png" alt="Logo Da Loja">
+      <p>Qualidade e sabor que você sente em cada pedido.</p>
+      <a href="#">
+        <i class="fa-brands fa-instagram" id="instagram-icon"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-tiktok" id="tiktok-icon"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-whatsapp" id="WhatsApp-icon"></i>
+      </a>
+    </div>
+    <ul>
+      <h3>Navegação</h3>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="lanches.html">Lanches</a></li>
+      <li><a href="pizza.html">Pizza</a></li>
+      <li><a href="porcoes.html">Porções</a></li>
+      <li><a href="bebidas.html">Bebidas</a></li>
+    </ul>
+    <ul class="localizacao-info">
+      <h3>Informações</h3>
+
+      <li>
+        <i class="fa-solid fa-location-dot" id="localizacao-icon"></i>
+        Rua das Delicias, 123 - Centro - Sua Cidade/UF
+      </li>
+
+      <li>
+        <i class="fa-solid fa-clock"></i>
+        Seg a Dom: 17h às 00h
+      </li>
+
+      <li>
+        <i class="fa-solid fa-phone" id="telefone-icon"></i>
+        (61) 99999-9999
+      </li>
+    </ul>
+    <ul>
+      <h3>Formas de pagamento</h3>
+      <img src="../imagens/formasDePagamento.png" alt="Formas de pagamento">
+    </ul>
+  </footer>
 
         <script src="../js/script.js"></script>
         <script src="../js/carinho.js"></script>

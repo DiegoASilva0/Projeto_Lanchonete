@@ -2,96 +2,87 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
   <link rel="stylesheet" href="estilos/paginas.css">
-  <link rel="stylesheet" href="estilos/style.css" />
-  <link rel="stylesheet" href="estilos/midia-quires.css" />
-  
-  <title>Document</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/midia-quires.css">
+
+  <title>Lanchonete</title>
 </head>
 
 <body>
+
   <div id="adicionadoPedido">
     <h1>Lanchonete</h1>
-    <p>Pedidos Adicionado Com Sucesso</p>
+    <p>Pedido adicionado com sucesso</p>
   </div>
+
   <header>
     <div>
-      <img src="logo/logo.png" alt="Logo" />
-      <i id="carrinho-menu" class="material-symbols-outlined"  onclick="abrirCarrinho()">shopping_cart</i>
+      <img src="logo/logo.png" alt="Logo">
+      <i id="carrinho-menu" class="material-symbols-outlined" onclick="abrirCarrinho()">shopping_cart</i>
       <i id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</i>
     </div>
 
     <nav id="menu-mobile">
       <ul>
-        <li><a href="#">Inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="pag/lanches.html">Lanches</a></li>
-        <li><a href="#">Pizza</a></li>
-        <li><a href="#">Porções</a></li>
-        <li><a href="#">Bebidas</a></li>
-        <li><a href="#">Contatos</a></li>
+        <li><a href="pag/pizza.html">Pizza</a></li>
+        <li><a href="pag/porcoes.html">Porções</a></li>
+        <li><a href="pag/bebidas.html">Bebidas</a></li>
       </ul>
     </nav>
-    <i
-    id="carrinho"
-    class="material-symbols-outlined"
-    onclick="abrirCarrinho()">
-    shopping_cart
-</i>
+
+    <i id="carrinho" class="material-symbols-outlined" onclick="abrirCarrinho()">shopping_cart</i>
   </header>
 
-<div id="overlay" onclick="fecharCarrinho()"></div>
+  <div id="overlay" onclick="fecharCarrinho()"></div>
 
-<section id="compras" class="carrinho_lista">
-  <button id="fechar-carrinho" onclick="fecharCarrinho()" aria-label="Fechar carrinho">
-        <span class="material-symbols-outlined">close</span>
+  <section id="compras" class="carrinho_lista">
+    <button id="fechar-carrinho" onclick="fecharCarrinho()" aria-label="Fechar carrinho">
+      <span class="material-symbols-outlined">close</span>
     </button>
 
     <h1>Meus Pedidos</h1>
 
     <div id="msg_carrinho">
-        
-
+      <h2>🛒 Seu carrinho</h2>
+      <div id="carrinho_msg"></div>
     </div>
 
     <div id="finalizar_pedidos">
-
+      <div class="finalizar_pedidos_info">
         <div class="subtotal">
-            <span>Subtotal</span>
-            <span>R$ 0,00</span>
+          <span>Subtotal</span>
+          <span id="subtotal">R$ 0,00</span>
         </div>
 
-        <button type="button" class="btn_finalizarPedido" onclick="finalizarPedido()">
-            Finalizar Pedido
-        </button>
-
+        <button type="button" class="btn_finalizarPedido" onclick="finalizarPedido()">Finalizar Pedido</button>
+      </div>
     </div>
-
-</section>
+  </section>
 
   <main>
+
     <article class="background-principal">
       <div class="informacoes-principais-container">
         <div>
-          <h1>
-            O melhor sabor, <br />
-            <span class="color-yellow">Pertinho de você!</span>
-          </h1>
-          <p>
-            Lanches, porções, pizzas e açaís feitos com ingredientes
-            selecionados para você.
-          </p>
+          <h1>O melhor sabor, <br><span class="color-yellow">Pertinho de você!</span></h1>
+
+          <p>Lanches, porções, pizzas e açaís feitos com ingredientes selecionados para você.</p>
 
           <div id="button-principais">
             <button id="verCardapio">
-              <span class="material-symbols-outlined">menu_book</span> Ver
-              Cardápio
+              <span class="material-symbols-outlined">menu_book</span>
+              Ver Cardápio
             </button>
+
             <button id="WhatsApp">
               <i class="fa-brands fa-whatsapp"></i>
               Chamar no WhatsApp
@@ -99,190 +90,177 @@
           </div>
 
           <div class="informacoes-estabelecimento">
-
             <div class="estabelecimento">
-              <span>
-                <i class="fa-solid fa-location-dot" id="localizacao-icon"></i>
-                Localização
-              </span>
+              <span><i class="fa-solid fa-location-dot" id="localizacao-icon"></i> Localização</span>
               <p>Rua das Delicias, 123</p>
               <p>Centro - Sua Cidade/UF</p>
             </div>
 
             <div class="estabelecimento">
-              <span>
-                <i class="fa-solid fa-clock"></i>
-                Horário de atendimento
-              </span>
+              <span><i class="fa-solid fa-clock"></i> Horário de atendimento</span>
               <p>Seg a Dom: 17h às 00h</p>
               <p>Sexta e Sábado: até 01h</p>
             </div>
 
             <div class="estabelecimento">
-              <span>
-                <i class="fa-solid fa-bag-shopping" id="compras-icon"></i>
-                Entrega
-              </span>
+              <span><i class="fa-solid fa-bag-shopping" id="compras-icon"></i> Entrega</span>
               <p>Entrega rápida</p>
               <p>para toda região</p>
             </div>
-
           </div>
         </div>
       </div>
     </article>
 
     <section id="informacoes-categoria">
+
       <article class="pedidos-conteudo">
         <h2>Escolha uma Categoria</h2>
+
         <div class="galeria">
           <div>
-            <a href="#"><img src="imagens/icons-categorias/lanche.png" alt="" />Lanches</a>
+            <a href="pag/lanches.html"><img src="imagens/icons-categorias/lanche.png" alt="Lanches">Lanches</a>
           </div>
+
           <div>
-            <a href="#"><img src="imagens/icons-categorias/pizza.png" alt="" />
-              Pizza</a>
+            <a href="pag/pizza.html"><img src="imagens/icons-categorias/pizza.png" alt="Pizza">Pizza</a>
           </div>
+
           <div>
-            <a href="#"><img src="imagens/icons-categorias/porcoes.png" alt="" />Porções</a>
+            <a href="pag/porcoes.html"><img src="imagens/icons-categorias/porcoes.png" alt="Porções">Porções</a>
           </div>
+
           <div>
-           <a href="#"><img src="imagens/icons-categorias/acai.png" alt="" />Bebidas</a>
+            <a href="pag/bebidas.html"><img src="imagens/icons-categorias/bebidas.png" alt="Bebidas">Bebidas</a>
           </div>
         </div>
       </article>
-     
 
       <article class="pedidos-conteudo">
         <h2>Os Mais Pedidos</h2>
-        <section class="categorias" id="mais-pedidos">
 
+        <section class="categorias" id="mais-pedidos">
           <div class="produtos">
 
             <article class="produto-card">
               <img src="imagens/pedidos/hamburguer/X-tudo.png" alt="X-Tudo">
+
               <div class="produto-info">
                 <h3>X-Tudo</h3>
                 <p>Hambúrguer, queijo, presunto, bacon, ovo, calabresa, batata palha, alface, tomate, cebola e molho especial.</p>
+
                 <div class="produto-footer">
                   <span class="preco">R$ 29,90</span>
-                  <button type="button" class="btn-adicionar" aria-label="Adicionar X-Tudo ao carrinho" onclick="adicionarAoCarrinho(hamburguer[0])">+</button>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar X-Tudo ao carrinho" onclick="adicionarAoCarrinho(produtoCadastrado[0])">+</button>
                 </div>
               </div>
             </article>
 
             <article class="produto-card">
-              <img src="imagens/pedidos/hamburguer/X-smash.png" alt="Combo Smash">
+              <img src="imagens/pedidos/hamburguer/X-smash.png" alt="X-Smash Duplo">
+
               <div class="produto-info">
                 <h3>X-Smash Duplo</h3>
                 <p>Dois smash burgers bem selados, cheddar derretido, cebola caramelizada e molho especial da casa.</p>
+
                 <div class="produto-footer">
                   <span class="preco">R$ 27,90</span>
-                  <button type="button" class="btn-adicionar" aria-label="Adicionar Combo Smash ao carrinho" onclick="adicionarAoCarrinho(hamburguer[7])">+</button>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar X-Smash Duplo ao carrinho" onclick="adicionarAoCarrinho(produtoCadastrado[7])">+</button>
                 </div>
               </div>
             </article>
 
             <article class="produto-card">
-              <img src="imagens/porcao-batata.jpg" alt="Porção de batata frita com cheddar e bacon">
+              <img src="imagens/pedidos/porcoes/porcao_batatas_fritas.png" alt="Batata com cheddar e bacon">
+
               <div class="produto-info">
                 <h3>Porção de Batata</h3>
                 <p>Batata frita crocante com cheddar e bacon.</p>
+
                 <div class="produto-footer">
-                  <span class="preco">R$ 24,90</span>
-                  <button type="button" class="btn-adicionar"
-                    aria-label="Adicionar Porção de Batata ao carrinho">+</button>
+                  <span class="preco">R$ 29,90</span>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar Batata ao carrinho" onclick="adicionarAoCarrinho(produtoCadastrado[15])">+</button>
                 </div>
               </div>
             </article>
 
             <article class="produto-card">
-              <img src="imagens/pizza-calabresa.jpg" alt="Pizza de calabresa">
+              <img src="imagens/pedidos/pizza/pizza_calabresa.png" alt="Pizza de Calabresa">
+
               <div class="produto-info">
                 <h3>Pizza Calabresa</h3>
                 <p>Calabresa, cebola, mussarela e orégano.</p>
+
                 <div class="produto-footer">
                   <span class="preco">R$ 39,90</span>
-                  <button type="button" class="btn-adicionar"
-                    aria-label="Adicionar Pizza Calabresa ao carrinho">+</button>
+                  <button type="button" class="btn-adicionar" aria-label="Adicionar Pizza Calabresa ao carrinho" onclick="adicionarAoCarrinho(produtoCadastrado[8])">+</button>
                 </div>
               </div>
             </article>
+
           </div>
         </section>
       </article>
 
       <article id="avaliacoes">
         <h2>⭐ Avaliações dos Clientes</h2>
+
         <div id="avaliacoes-container">
           <div>
-            <span>Lucas Pereira <br> ⭐⭐⭐⭐⭐</span>
+            <span>Lucas Pereira <br>⭐⭐⭐⭐⭐</span>
             <p>Lanche sensacional! Chegou rápido e muito bem embalado. Recomendo!</p>
           </div>
+
           <div>
-            <span>Juliana Costa <br> ⭐⭐⭐⭐⭐</span>
-            <p>A pizza é incrível! Massa leve e bem recheada. Ja virei cliente fiel 😍</p>
+            <span>Juliana Costa <br>⭐⭐⭐⭐⭐</span>
+            <p>A pizza é incrível! Massa leve e bem recheada. Já virei cliente fiel 😍</p>
           </div>
+
           <div>
-            <span>Rafael Almeida <br> ⭐⭐⭐⭐⭐</span>
-            <p>Melhor açai da cidade! Sempre peço aqui, nunca me decepciono.</p>
+            <span>Rafael Almeida <br>⭐⭐⭐⭐⭐</span>
+            <p>Melhor açaí da cidade! Sempre peço aqui, nunca me decepciono.</p>
           </div>
         </div>
       </article>
-    </section> 
-  </main>
 
+    </section>
+  </main>
 
   <footer>
     <div>
       <img src="logo/logo.png" alt="Logo Da Loja">
       <p>Qualidade e sabor que você sente em cada pedido.</p>
-      <a href="#">
-        <i class="fa-brands fa-instagram" id="instagram-icon"></i>
-      </a>
 
-      <a href="#">
-        <i class="fa-brands fa-tiktok" id="tiktok-icon"></i>
-      </a>
-
-      <a href="#">
-        <i class="fa-brands fa-whatsapp" id="WhatsApp-icon"></i>
-      </a>
+      <a href="#"><i class="fa-brands fa-instagram" id="instagram-icon"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok" id="tiktok-icon"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp" id="WhatsApp-icon"></i></a>
     </div>
+
     <ul>
       <h3>Navegação</h3>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="/pag/lanches.html">Lanches</a></li>
-      <li><a href="#">Pizza</a></li>
-      <li><a href="#">Porções</a></li>
-      <li><a href="#">Bebidas</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="pag/lanches.html">Lanches</a></li>
+      <li><a href="pag/pizza.html">Pizza</a></li>
+      <li><a href="pag/porcoes.html">Porções</a></li>
+      <li><a href="pag/bebidas.html">Bebidas</a></li>
     </ul>
+
     <ul class="localizacao-info">
       <h3>Informações</h3>
 
-      <li>
-        <i class="fa-solid fa-location-dot" id="localizacao-icon"></i>
-        Rua das Delicias, 123 - Centro - Sua Cidade/UF
-      </li>
-
-      <li>
-        <i class="fa-solid fa-clock"></i>
-        Seg a Dom: 17h às 00h
-      </li>
-
-      <li>
-        <i class="fa-solid fa-phone" id="telefone-icon"></i>
-        (61) 99999-9999
-      </li>
+      <li><i class="fa-solid fa-location-dot" id="localizacao-icon"></i> Rua das Delicias, 123 - Centro - Sua Cidade/UF</li>
+      <li><i class="fa-solid fa-clock"></i> Seg a Dom: 17h às 00h</li>
+      <li><i class="fa-solid fa-phone" id="telefone-icon"></i> (61) 99999-9999</li>
     </ul>
+
     <ul>
       <h3>Formas de pagamento</h3>
       <img src="imagens/formasDePagamento.png" alt="Formas de pagamento">
     </ul>
   </footer>
 
+  <script src="js/carinho.js"></script>
   <script src="js/script.js"></script>
-</body>
 
+</body>
 </html>
